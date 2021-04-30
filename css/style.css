@@ -1,0 +1,359 @@
+body {
+    background-color: #2b2a2a;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+p::selection,
+a::selection,
+li::selection,
+b::selection,
+strong::selection,
+small::selection,
+span::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection {
+    background-color: #ffc107;
+    color: rgb(34, 34, 34);
+}
+
+ul {
+    list-style: none;
+}
+
+.side-container {
+    position: fixed;
+    left: 0%;
+    transition: 500ms ease-in-out;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.css-img-small {
+    width: 150px;
+    height: 150px;
+}
+
+.css-img-medium {
+    width: 300px;
+    height: 300px;
+}
+
+.css-img-big {
+    width: 600px;
+    height: 400px;
+}
+
+.css-border-radius {
+    border-radius: 50%;
+    /* border: 3px solid rgb(255, 255, 255); */
+    border: 3px solid #ffc107;
+    /* border-bottom: 3px solid #ffc107; */
+}
+
+.css-float-left {
+    float: left;
+    width: 21%;
+}
+
+.css-side-bg {
+    background-color: #3d3d3d;
+}
+
+
+/* html progress */
+
+.html-progress {
+    width: 100%;
+    height: 15px;
+    /* background-color: rgb(27, 27, 27); */
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.596);
+    /* overflow: hidden; */
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.html-progress::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 15px;
+    background-color: #ffc107;
+    z-index: 1;
+    animation-name: prog;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition: all 600ms ease-in-out;
+}
+
+@keyframes prog {
+    from {
+        width: 0;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+
+/* end of html progress */
+
+
+/* css progress */
+
+.css-progress {
+    width: 100%;
+    height: 15px;
+    /* overflow: hidden; */
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.596);
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.css-progress::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 15px;
+    background-color: #ffc107;
+    z-index: 1;
+    animation-name: css-prog;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition: all 600ms ease-in-out;
+}
+
+@keyframes css-prog {
+    from {
+        width: 0;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+.end-br {
+    width: 100%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.178);
+    margin: 10px 0 10px 0;
+}
+
+
+/* end of css progress */
+
+
+/* bootstrap progress */
+
+.bootstrap-progress {
+    width: 100%;
+    height: 15px;
+    /* overflow: hidden; */
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.596);
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.bootstrap-progress::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 15px;
+    background-color: #ffc107;
+    z-index: 1;
+    animation-name: bootstrap-prog;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition: all 600ms ease-in-out;
+}
+
+@keyframes bootstrap-prog {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+
+/* end of bootstrap progress */
+
+
+/* js progress */
+
+.js-progress {
+    width: 100%;
+    height: 15px;
+    /* overflow: hidden; */
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.596);
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.js-progress::before {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 15px;
+    background-color: #ffc107;
+    z-index: 1;
+    animation-name: js-prog;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition: all 600ms ease-in-out;
+}
+
+@keyframes js-prog {
+    from {
+        width: 0;
+    }
+    to {
+        width: 30%;
+    }
+}
+
+
+/* end of js progress */
+
+
+/* main */
+
+#checkbox {
+    display: none;
+}
+
+.css-menu-icon {
+    font-size: 38px;
+    position: absolute;
+    left: 26%;
+    position: fixed;
+}
+
+#checkbox:checked~.side-container {
+    position: absolute;
+    left: -260px;
+}
+
+.side-container::-webkit-scrollbar {
+    width: 1em;
+}
+
+.side-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.side-container::-webkit-scrollbar-thumb {
+    background-color: #ffc107;
+    outline: 1px solid slategrey;
+}
+
+.css-container {
+    margin: 30px 0 30px 0;
+    position: absolute;
+    z-index: -2;
+}
+
+.css-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.css-margin-left {
+    margin-left: 260px;
+}
+
+.css-end {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.css-end::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.content {
+    margin: 50px 0 0 100px;
+}
+
+.img-container img {
+    margin-left: -100px;
+    border-top: 3px solid #ffc107;
+    border-bottom: 3px solid #ffc107;
+}
+
+
+/* .section-br {
+    width: 115%;
+    height: 5px;
+    background-color: #ffc107;
+    margin-top: 50px 0 50px 0;
+} */
+
+.text-bg {
+    background-color: #ffc107;
+    width: 80%;
+}
+
+.cert-img img {
+    width: 100%;
+    height: auto;
+}
+
+.css-width {
+    width: 35%;
+    /* margin-left: -10px; */
+}
+
+.main-margin-left {
+    margin-left: 350px;
+    margin-top: 50px;
+    position: absolute;
+    z-index: -2;
+}
+
+.img-border {
+    border-top: 3px solid #ffc107;
+    border-bottom: 3px solid #ffc107;
+}
+
+.p-margin-top {
+    margin-top: 50px;
+}
+
+.container-width {
+    width: 60%;
+    overflow-y: hidden;
+}
+
+.row-margin-bottom {
+    margin-bottom: 50px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.css-move-up {
+    /* margin-top: -50px; */
+    position: fixed;
+    transition: 300ms ease-in-out;
+}
+
+@media(max-width:700px) {
+    .css-float-left {
+        width: 100%;
+    }
+    .css-menu-icon {
+        left: 80%;
+    }
+}
