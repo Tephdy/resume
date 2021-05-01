@@ -243,10 +243,10 @@ ul {
     left: -285px;
 }
 
-@media(max-width:720px) {
+@media(max-width:700px) {
     #checkbox:checked~.side-container {
         position: absolute;
-        left: -500px;
+        left: -600px;
     }
 }
 
