@@ -243,13 +243,6 @@ ul {
     left: -285px;
 }
 
-@media(max-width:700px) {
-    #checkbox:checked~.side-container {
-        position: absolute;
-        left: -600px;
-    }
-}
-
 #checkbox:checked~.main-container {
     width: 50%;
 }
@@ -392,4 +385,10 @@ ul {
 
 .side-i-container li i:hover {
     border-bottom: 4px solid white;
+}
+
+@media(max-width:700px) {
+    .side-i-container {
+        display: none;
+    }
 }
