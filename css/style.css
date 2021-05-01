@@ -243,6 +243,13 @@ ul {
     left: -285px;
 }
 
+@media(max-width:720px) {
+    #checkbox:checked~.side-container {
+        position: absolute;
+        left: -300px;
+    }
+}
+
 #checkbox:checked~.main-container {
     width: 50%;
 }
