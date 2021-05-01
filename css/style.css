@@ -240,7 +240,7 @@ ul {
 
 #checkbox:checked~.side-container {
     position: absolute;
-    left: -285px;
+    left: -385px;
 }
 
 #checkbox:checked~.main-container {
