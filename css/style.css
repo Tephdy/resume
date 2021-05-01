@@ -28,7 +28,7 @@ ul {
 .side-container {
     position: fixed;
     left: 0%;
-    transition: 500ms ease-in-out;
+    transition: 300ms ease-in-out;
     height: 100vh;
     overflow-y: scroll;
 }
@@ -58,10 +58,14 @@ ul {
 .css-float-left {
     float: left;
     width: 21%;
+    position: fixed;
+    height: 100vh;
 }
 
 .css-side-bg {
     background-color: #3d3d3d;
+    position: fixed;
+    height: 100vh;
 }
 
 
@@ -236,7 +240,11 @@ ul {
 
 #checkbox:checked~.side-container {
     position: absolute;
-    left: -260px;
+    left: -285px;
+}
+
+#checkbox:checked~.main-container {
+    width: 50%;
 }
 
 .side-container::-webkit-scrollbar {
@@ -345,6 +353,7 @@ ul {
 
 .css-move-up {
     /* margin-top: -50px; */
+    height: 100vh;
     position: fixed;
     transition: 300ms ease-in-out;
 }
@@ -356,4 +365,24 @@ ul {
     .css-menu-icon {
         left: 80%;
     }
+}
+
+.side-i-container {
+    width: 7%;
+    background-color: #2b2a2a;
+    float: left;
+    position: fixed;
+    padding: 5px;
+    height: 100vh;
+    z-index: -3;
+}
+
+.side-i-container li i {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: -15px;
+}
+
+.side-i-container li i:hover {
+    border-bottom: 4px solid white;
 }
